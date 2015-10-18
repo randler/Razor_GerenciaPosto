@@ -1,4 +1,3 @@
-
 from django.contrib import admin
 from CONAB.novoGasto.models import novoGasto
 
