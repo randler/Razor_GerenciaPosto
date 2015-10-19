@@ -1,5 +1,5 @@
 from django.contrib import admin
-from CONAB.novoGasto.models import novoGasto
+from CONAB.gasto.models import novoGasto
 
 class novoGastoAdmin(admin.ModelAdmin):
     model = novoGasto
