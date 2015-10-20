@@ -1,0 +1,9 @@
+<html>
+ <body>
+  <h1>CONAB</h1>
+  {% for combustivel in latest %}
+   <h2>{{ combustivel.nome_posto }}</h2>
+   {{ combustivel.preco_abastecido }}
+  {% endfor %}
+ </body>
+</html>
