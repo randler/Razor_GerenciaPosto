@@ -125,11 +125,12 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'CONAB.gasto',
     'django_admin_bootstrapped.bootstrap3',
     'django_admin_bootstrapped',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+    'CONAB.gasto',
+    'CONAB.relatorio',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

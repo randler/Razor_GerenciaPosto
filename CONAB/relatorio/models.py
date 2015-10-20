@@ -1,10 +1,8 @@
 from django.db import models
 
-class Combustivel(models.Model):
+class Relatorio(models.Model):
     class Meta:
         ordering = ('-data_abastecido',)
-        verbose_name_plural = 'Combustivel'
-
     TIPO_COMBUSTIVEL = (
         (u'gasolina', u'Gasolina'),
         (u'diesel',u'Diesel'),
@@ -17,12 +15,6 @@ class Combustivel(models.Model):
     preco_abastecido = models.FloatField()
     nome_posto = models.CharField(max_length=20)
     km_atual = models.FloatField()
-    descricao = models.TextField(max_length=60)
-
-class Conveniencia(models.Model):
-    gasto_conv_id = models.AutoField(primary_key=True)
-    nome_conveniencia = models.CharField(max_length=50)
-    preco_conveniencia = models.FloatField()
-    descricao_conveniencia = models.TextField(max_length=50)
+    descricao = models.CharField(max_length=60)
     class Meta:
-        verbose_name_plural = 'Coveniencia'
+        verbose_name_plural = 'Relatorio'
