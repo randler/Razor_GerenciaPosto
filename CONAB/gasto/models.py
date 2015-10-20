@@ -1,6 +1,8 @@
 from django.db import models
 
 class Combustivel(models.Model):
+    class Meta:
+        ordering = ('-data_abastecido',)
     TIPO_COMBUSTIVEL = (
         (u'gasolina', u'Gasolina'),
         (u'diesel',u'Diesel'),
