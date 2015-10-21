@@ -1,10 +1,33 @@
-<html>
- <body>
-  <h1>CONAB</h1>
-  {% for combustivel in latest %}
-   <h2>{{ combustivel.nome_posto }}</h2>
-   {{ combustivel.preco_abastecido }}
-  {% endfor %}
- <!-- comentário ->
- </body>
-</html>
+{% extends "gasto/base.html" %}
+{% block content %}
+<div class="combustivel">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Posto</th>
+                <th>Tipo de Combustivel</th>
+                <th>Preco</th>
+                <th>Litros</th>
+                <th>Data</th>
+                <th>KM</th>
+                <th>Descricao</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for combustivel in latest %}
+            <tr>
+                <td>{{ combustivel.nome_posto }}</td>
+                <td>{{ combustivel.tipo_abastecido }}</td>
+                <td>{{ combustivel.preco_abastecido }}</td>
+                <td>{{ combustivel.litros_abastecido }}</td>
+                <td>{{ combustivel.data_abastecido }}</td>
+                <td>{{ combustivel.km_atual }}</td>
+                <td>{{ combustivel.descricao }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock content %}
