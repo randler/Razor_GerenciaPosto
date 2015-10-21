@@ -1,5 +1,5 @@
 from django.contrib import admin
-from CONAB.gasto.models import Combustivel,Conveniencia
+from CONAB.gasto.models import Combustivel,Servico
 
 class combustivelAdmin(admin.ModelAdmin):
     model = Combustivel
@@ -9,9 +9,9 @@ class combustivelAdmin(admin.ModelAdmin):
     save_on_top = True
 admin.site.register(Combustivel, combustivelAdmin)
 
-class convenienciaAdmin(admin.ModelAdmin):
-    model = Conveniencia
-    list_display = ['descricao_conveniencia','preco_conveniencia']
-    search_fields = ['descricao_conveniencia']
+class servicoAdmin(admin.ModelAdmin):
+    model = Servico
+    list_display = ['nome_servico','preco_servico']
+    search_fields = ['descricao_servico']
     save_on_top = True
-admin.site.register(Conveniencia, convenienciaAdmin)
+admin.site.register(Servico, servicoAdmin)

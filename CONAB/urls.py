@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, include, url
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
-from CONAB.gasto.models import Combustivel,Conveniencia
+from CONAB.gasto.models import Combustivel,Servico
 from django.views.generic import ArchiveIndexView
 admin.autodiscover()
 
