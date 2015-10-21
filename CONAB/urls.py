@@ -7,7 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-     url(r'^$', 'CONAB.gasto.views.home', name='home'),
+     url(r'^$', include('CONAB.gasto.urls')),
     # url(r'^CONAB/', include('CONAB.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

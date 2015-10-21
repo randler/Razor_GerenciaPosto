@@ -19,18 +19,19 @@ class Combustivel(models.Model):
     preco_abastecido = models.FloatField()
     nome_posto = models.CharField(max_length=20)
     km_atual = models.FloatField()
+    preco_conveniencia = models.FloatField()
     descricao = models.TextField(max_length=60)
 
 
 class Servico(models.Model):
 
     NOME_SERVICO = (
-        (u'',u''),
-        (u'',u''),
-        (u'',u''),
-        (u'',u''),
-        (u'',u''),
-        (u'',u''),
+        (u'lavagem rapida',u'Lavagem rapida'),
+        (u'trocas de oleos e filtros',u'Trocas de oleos e filtros'),
+        (u'alinhamento',u'Alinhamento'),
+        (u'balanceamento',u'Balanceamento'),
+        (u'servicos eletricos',u'Servicos eletricos'),
+        (u'pneus',u'Pneus'),
     )
 
     gasto_serv_id = models.AutoField(primary_key=True)
