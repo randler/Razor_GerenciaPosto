@@ -62,7 +62,7 @@ MEDIA_ROOT = CAMINHO.child('media')
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = ''
+MEDIA_URL = 'http://127.0.0.1:8000/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -144,7 +144,7 @@ from django.core.urlresolvers import reverse_lazy
 
 LOGIN_URL = reverse_lazy('login')
 LOGIN_REDIRECT_URL = reverse_lazy('login')
-LOGUT_URL = reverse_lazy('logout')
+LOGOUT_URL = reverse_lazy('logout')
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
