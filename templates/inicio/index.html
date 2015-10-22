@@ -1,13 +1,12 @@
     <html><head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="{{ STATIC_URL }}bootstrap/js/tests/vendor/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}bootstrap/dist/js/bootstrap.min.js"></script>
+        <link href="{{ STATIC_URL }}bootstrap/dist/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="{{ STATIC_URL }}bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
 
     </head><body>
-
 
 
     {% if user.is_authenticated%}
@@ -82,44 +81,12 @@
                                 </div>
                         </div>
                     </div>
-                </div>                                <div class="modal inmodal fade" id="myModalCad" tabindex="-1" role="dialog"  aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title">Cadastrar</h4>
-                            </div>
-                            <div class="modal-body">
-                            <form class="form-horizontal" method="POST">{%csrf_token %}
-                                    <p>Está quase!</p>
-                                    <div class="form-group"><label class="col-lg-2 control-label">Login</label>
-
-                                        <div class="col-lg-10"><input name="loginCad" type="text" placeholder="Login" class="form-control">
-                                        </div>
-                                    </div>
-                                        <div class="form-group"><label class="col-lg-2 control-label">E-mail</label>
-
-                                        <div class="col-lg-10"><input name="emailCad" type="email" placeholder="E-mail" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group"><label class="col-lg-2 control-label">Senha</label>
-
-                                        <div class="col-lg-10"><input name="senhaCad" type="password" placeholder="Senha" class="form-control"></div>
-                                    </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-white" data-dismiss="modal">Cancelar</button>
-                                <button type="submit" class="btn btn-primary">Cadastrar</button>
-                            </div>
-                            </form>
-                                </div>
-                        </div>
-                    </div>
                 </div>
 
                 <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalLogin">Login</button>
                 <br>
                 <br>
-                <a class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModalCad">  Cadastre-se</a>
+                <a class="btn btn-primary btn-sm" href="cadastrar/">  Cadastre-se</a>
 
 
 
@@ -171,7 +138,7 @@
             <div class="row">
               <div class="col-sm-6">
                 <h1 contenteditable="true">
-                  <i class="fa fa-car fa-fw fa-lg"></i>&nbsp; &nbsp;CONAB</h1>
+                 CONAB</h1>
                 <p>Controle de gastos em &nbsp;Abestecimento&nbsp;</p>
               </div>
               <div class="col-sm-6">
@@ -181,15 +148,11 @@
                 </p>
                 <div class="row">
                   <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
-                    <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                    <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                    <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
-                    <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12 hidden-xs text-right">
-                    <a href="https://github.com/randler/Razor_GerenciaPosto.git"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
                   </div>
                 </div>
               </div>

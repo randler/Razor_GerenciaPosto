@@ -9,4 +9,5 @@ urlpatterns = patterns('',
     url(r'^fechar/$', 'django.contrib.auth.views.logout_then_login',
           name='logout'),
 
+
 )
