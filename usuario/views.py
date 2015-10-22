@@ -6,6 +6,7 @@ def index(request):
     if request.method == 'POST':
         form = criaUsuario(request.POST)
 
+
         if form.is_valid():
 
             form.save()
