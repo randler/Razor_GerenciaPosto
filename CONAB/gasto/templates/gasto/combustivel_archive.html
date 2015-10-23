@@ -15,6 +15,9 @@
             </tr>
             </thead>
             <tbody>
+            <tr>
+                <th>Total: {{latest|length}}</th>
+            </tr>
                 {% for combustivel in latest %}
             <tr>
                 <td>{{ combustivel.nome_posto }}</td>

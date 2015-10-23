@@ -116,7 +116,8 @@ ROOT_URLCONF = 'CONAB.urls'
 WSGI_APPLICATION = 'CONAB.wsgi.application'
 
 TEMPLATE_DIRS = (
-    CAMINHO.child('templates'),
+    '/home/junior/Desenvolvimento/python/ifba/Razor_GerenciaPosto/CONAB/gasto/templates/gasto'
+    #CAMINHO.child('templates'),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

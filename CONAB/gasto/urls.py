@@ -3,6 +3,8 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
 
+	url(r'^abastecimentos/$', 'CONAB.gasto.views.abastecimentos'),
+
     url(r'^$', 'django.contrib.auth.views.login',
          {'template_name': 'inicio/index.html'}, name='login'),
 

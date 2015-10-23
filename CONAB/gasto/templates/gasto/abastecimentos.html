@@ -1,0 +1,9 @@
+{% extends "gasto/base.html" %}
+{% block content %}
+<div class="combustivel">
+    <div class="table-responsive">
+        <h2>QTD Total: {{abast}}</h2>
+        <p>Preco total: {{s.preco_abastecido__sum}}</p>
+    </div>
+</div>
+{% endblock content %}
