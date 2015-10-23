@@ -1,9 +1,22 @@
 {% extends "gasto/base.html" %}
 {% block content %}
-<div class="combustivel">
-    <div class="table-responsive">
-        <h2>QTD Total: {{abast}}</h2>
-        <p>Preco total: {{s.preco_abastecido__sum}}</p>
-    </div>
-</div>
+          <table class="table">
+              <thead>
+                <tr>
+                  <th>Gasto</th>
+                  <th>Gasto Serviço</th>
+                  <th>Gasto Conveniência</th>
+                  <th>Gasto Abastecendo</th>
+                </tr>
+              </thead>
+              <tbody>
+
+            <tr>
+                <td>Total:</td>
+                <td>{{somaServ.preco_servico__sum}} R$</td>
+                <td>{{somaConv.preco_conveniencia__sum}} R$</td>
+                <td>{{s.preco_abastecido__sum}} R$</td>
+            </tr>
+              </tbody>
+            </table>
 {% endblock content %}
