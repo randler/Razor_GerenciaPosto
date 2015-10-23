@@ -22,7 +22,6 @@ class Combustivel(models.Model):
     preco_conveniencia = models.FloatField()
     descricao = models.TextField(max_length=60)
 
-
 class Servico(models.Model):
 
     NOME_SERVICO = (

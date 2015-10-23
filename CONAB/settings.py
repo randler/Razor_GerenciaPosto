@@ -137,7 +137,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'CONAB.gasto',
     'CONAB.relatorio',
-    'usuario'
+    'usuario',
+    'relatorioGeral',
+
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

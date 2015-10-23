@@ -1,6 +1,7 @@
 from django.contrib import admin
 from CONAB.relatorio.models import Relatorio
 
+
 class relatorioAdmin(admin.ModelAdmin):
     model = Relatorio
     list_display = ['nome_posto','tipo_abastecido','preco_abastecido','litros_abastecido','data_abastecido','descricao','km_atual']
